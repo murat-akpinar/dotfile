@@ -1,2 +1,2 @@
 # dotfile
-Oh My Posh
+Oh My Posh terminal tema dosyası
