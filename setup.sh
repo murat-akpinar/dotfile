@@ -6,4 +6,6 @@ wget https://raw.githubusercontent.com/magwyen/dotfile/main/mytheme.omp.json -P 
 chmod u+rw ~/.poshthemes/*.omp.*
 echo 'eval "$(oh-my-posh init bash)"' >> .profile
 echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/mytheme.omp.json)"' >> .profile
+echo 'eval "$(oh-my-posh init bash)"' >> .bashrc
+echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/mytheme.omp.json)"' >> .bashrc
 oh-my-posh font install
