@@ -9,3 +9,4 @@ echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/mytheme.omp.json)"' >>
 echo 'eval "$(oh-my-posh init bash)"' >> ~/.bashrc
 echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/mytheme.omp.json)"' >> ~/.bashrc
 oh-my-posh font install
+exec bash
