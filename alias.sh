@@ -1,2 +1,4 @@
-alias ll='ls -ll'
-alias cdd='cd ..'
+echo alias ll='ls -ll' >> ~/.profile
+echo alias cdd='cd ..' >> ~/.profile
+
+
