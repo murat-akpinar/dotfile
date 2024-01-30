@@ -45,7 +45,7 @@
             "style": "agnoster_short"
           },
           "style": "plain",
-          "template":  "{{ .Path }}",
+          "template":  "{{ .Path }} ",
           "type": "path"
         },
         {
