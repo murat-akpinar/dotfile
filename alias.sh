@@ -7,3 +7,4 @@ echo "alias ara='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head 
 
 
 source ~/.profile
+
