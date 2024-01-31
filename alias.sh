@@ -1,15 +1,15 @@
-echo "alias ll='ls -lvrt'" >> ~/.profile
+echo "alias ll='ls -lvrt'" >> ~/.bashrc
 
-echo "alias cdd='cd ..'" >> ~/.profile
-echo "alias cddd='cd ../..'" >> ~/.profile
-
-
-echo "alias du='du -sh'" >> ~/.profile
+echo "alias cdd='cd ..'" >> ~/.bashrc
+echo "alias cddd='cd ../..'" >> ~/.bashrc
 
 
-echo "alias bcat='batcat'" >> ~/.profile
-echo "alias ara='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'" >> ~/.profile
+echo "alias du='du -sh'" >> ~/.bashrc
 
 
-source ~/.profile
+echo "alias bcat='batcat'" >> ~/.bashrc
+echo "alias ara='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'" >> ~/.bashrc
+
+
+source ~/.bashrc
 
