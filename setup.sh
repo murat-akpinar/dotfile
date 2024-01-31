@@ -4,8 +4,7 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 mkdir ~/.poshthemes
 cp ./mytheme.omp.json ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.omp.*
-echo 'eval "$(oh-my-posh init bash)"' >> ~/.profile
-echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/mytheme.omp.json)"' >> ~/.profile
+
 echo 'eval "$(oh-my-posh init bash)"' >> ~/.bashrc
 echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/mytheme.omp.json)"' >> ~/.bashrc
 oh-my-posh font install
