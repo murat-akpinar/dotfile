@@ -66,6 +66,14 @@
           "style": "plain",
           "type": "git"
         },
+
+        {
+          "foreground": "#63b2e7",
+          "style": "plain",
+          "template": "\udb82\udc33 {{.Context}}{{if .Namespace}} : {{.Namespace}}{{end}}",
+          "type": "kubectl"
+        },
+
         {
           "style": "plain",
           "foreground": "p:closer",
