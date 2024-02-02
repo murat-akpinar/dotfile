@@ -8,7 +8,7 @@ echo "alias du='du -sh'" >> ~/.bashrc
 
 
 echo "alias bcat='batcat'" >> ~/.bashrc
-echo "alias ara='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'" >> ~/.bashrc
+echo "alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'" >> ~/.bashrc
 
 
 source ~/.bashrc
