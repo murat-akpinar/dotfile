@@ -4,8 +4,12 @@ Symbols Nerd Font Mon + UbuntuMono Nerd Font = Ubuntu Nerd Font Propo Bold 12 si
 
 
 network'e bağlı contailarları listleer
-docker network inspect --format='{{range .Containers}} {{.Name}} {{end}}' web
+
+````bash
+docker network inspect --format='{{range .Containers}} {{.Name}} {{end}}' network-ismi
+````
 
 contaiların ip adresini verir
-docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' nginx-container
-
+````bash
+docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' container-ismi
+````
