@@ -17,5 +17,5 @@ vim -u NONE -c "helptags  ~/.vim/pack/vendor/start/indentLine/doc" -c "q"
 
 Vim satır sayılarını gösterme
 ````bash
-echo ':set relativenumber' >> ~/.vim/vimrc
+echo ':set number' >> ~/.vim/vimrc
 ````
