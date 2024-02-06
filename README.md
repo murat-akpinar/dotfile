@@ -13,3 +13,9 @@ contaiların ip adresini verir
 ````bash
 docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' container-ismi
 ````
+
+Vim girinti eklentisi
+```
+git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine
+vim -u NONE -c "helptags  ~/.vim/pack/vendor/start/indentLine/doc" -c "q"
+```bash
