@@ -5,7 +5,7 @@
         "closer": "p:os",
         "adres": "#ffb86c",
         "et": "#B7BDF8",
-        "git": "#8be9fd",
+        "git": "#ff5555",
         "name":  "#50fa7b",
         "hostname":  "#ff79c6"
   },
@@ -68,7 +68,7 @@
         },
 
         {
-          "foreground": "#63b2e7",
+          "foreground": "#8be9fd",
           "style": "plain",
           "template": "\udb82\udc33 {{.Context}}{{if .Namespace}} : {{.Namespace}}{{end}}",
           "type": "kubectl"
