@@ -6,7 +6,7 @@ Kullandığım fontlar;
 - Ubuntu Nerd Font Propo Bold 12 size.
 ### örnek görüntü
 
-![ornek](https://i.hizliresim.com/eqea1m5.png)
+![ornek](https://r.resimlink.com/fS9c_Rr68.png)
 
 ### Vim Ayarları
 Vim girinti eklentisi
