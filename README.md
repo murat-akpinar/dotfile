@@ -16,6 +16,8 @@ docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' co
 
 Vim girinti eklentisi
 ```
+
+```bash
 git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine
 vim -u NONE -c "helptags  ~/.vim/pack/vendor/start/indentLine/doc" -c "q"
-```bash
+```
