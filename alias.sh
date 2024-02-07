@@ -4,7 +4,7 @@ echo "alias cdd='cd ..'" >> ~/.bashrc
 echo "alias cddd='cd ../..'" >> ~/.bashrc
 
 
-echo "alias du='du -sh'" >> ~/.bashrc
+echo "alias du='du -sh *'" >> ~/.bashrc
 
 
 echo "alias bcat='batcat'" >> ~/.bashrc
