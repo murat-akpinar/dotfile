@@ -35,5 +35,4 @@ alias kdn='kubectl delete namespace'
 
 
 alias knewtoken='kubeadm token create --print-join-command'
-
 EOL
