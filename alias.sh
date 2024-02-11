@@ -33,6 +33,7 @@ alias kaf='kubectl apply -f'
 
 alias kgn='kubectl get nodes'
 alias kgp='kubectl get pods'
+alias kns='kubectl get ns'
 
 alias kpedit='kubectl edit pods'
 alias kpdes='kubectl describe pod'
