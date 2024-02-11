@@ -14,7 +14,7 @@ alias d='docker'
 alias dcon='docker container'
 alias dcom='docker compose'
 alias di='docker images'
-alias dcdel='docker container rm $(docker container ls -aq)'
+alias ddel='docker container rm $(docker container ls -aq)'
 
 #belirtilen netwwork ismine bağlı networkleri listeler
 alias dn="docker network inspect --format='{{range .Containers}} {{.Name}} {{end}}'"
