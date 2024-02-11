@@ -11,8 +11,8 @@ alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 
 #### DOCKER #####
 alias d='docker'
-
-alias dc='docker compose'
+alias dcon='docker container'
+alias dcom='docker compose'
 alias di='docker images'
 alias dcdel='docker container rm $(docker container ls -aq)'
 
