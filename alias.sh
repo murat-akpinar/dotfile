@@ -31,12 +31,11 @@ alias ks='kubectl -n kube-system'
 alias kcf='kubectl create -f'
 alias kaf='kubectl apply -f'
 
-alias kn='kubectl get nodes'
-alias kp='kubectl get pods'
+alias kgn='kubectl get nodes'
+alias kgp='kubectl get pods'
 
 alias kpedit='kubectl edit pods'
 alias kpdes='kubectl describe pod'
-alias kgp=' '
 alias kpall='kubectl get pods -A'
 
 alias kexp='kubectl explain'
