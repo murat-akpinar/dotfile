@@ -30,6 +30,7 @@ alias kns='kubectl config set-context --current --namespace'
 alias ks='kubectl -n kube-system'
 alias kcf='kubectl create -f'
 alias kaf='kubectl apply -f'
+alias kcn='kubectl create namespace'
 
 alias kn='kubectl get nodes'
 alias kp='kubectl get pods'
