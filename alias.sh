@@ -15,7 +15,7 @@ alias untar='tar -xzvf'
 alias d='docker'
 alias dcon='docker container'
 alias dcom='docker compose'
-alias di='docker images'
+alias dll='docker images'
 
 alias ddel='docker container rm $(docker container ls -aq)'
 alias dstop='docker stop $(docker ps -q)'
