@@ -9,7 +9,8 @@ alias du='du -sh *'
 alias bcat='batcat'
 alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 
-alias untar='tar -xzvf' 
+alias outtar='tar -xzvf'
+alias intar='tar -cvf' 
 
 #### DOCKER #####
 alias d='docker'
