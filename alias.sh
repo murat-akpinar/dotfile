@@ -12,7 +12,7 @@ alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 alias outtar='tar -xzvf'
 alias intar='tar -cvf' 
 
-alias scpcp='function _scpcp() {
+alias scpfile='function _scpcp() {
     scp "$1" "$2";
     dosya=$(basename "$1");
     hedef=$(echo "$2" | sed "s/:.*//"); # Hedef adresi ayıklar
