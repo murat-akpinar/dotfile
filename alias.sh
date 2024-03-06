@@ -12,6 +12,22 @@ alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 alias outtar='tar -xzvf'
 alias intar='tar -cvf' 
 
+alias scpcp='function _scpcp() {
+    scp "$1" "$2";
+    dosya=$(basename "$1");
+    hedef=$(echo "$2" | sed "s/:.*//"); # Hedef adresi ayıklar
+    hash_kaynak=$(sha256sum "$1" | awk "{ print \$1 }");
+    hash_hedef=$(ssh "$hedef" "sha256sum /root/$dosya" | awk "{ print \$1 }");
+    if [ "$hash_kaynak" == "$hash_hedef" ]; then
+        echo "Başarılı: Dosya bütünlüğü doğrulandı.";
+    else
+        echo "Başarısız: Dosya bütünlüğü doğrulanamadı!";
+    fi;
+    unset -f _scpcp;
+}; _scpcp'
+
+
+
 #### DOCKER #####
 alias d='docker'
 alias dcon='docker container'
