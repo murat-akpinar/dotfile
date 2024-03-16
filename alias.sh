@@ -66,6 +66,8 @@ alias kexp='kubectl explain'
 alias klog='kubectl logs'
 alias kall='kubectl get all'
 
+
+alias krs='kubectl get rs'
 alias kpvc='kubectl get pvc'
 alias ksvc='kubectl get svc'
 alias kgs='kubectl get services'
