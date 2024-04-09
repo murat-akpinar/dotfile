@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cat <<EOL >> ~/.bashrc
 
 alias ll='ls -lvrt'
