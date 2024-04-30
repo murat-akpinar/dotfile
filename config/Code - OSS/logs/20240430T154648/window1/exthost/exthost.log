@@ -1,0 +1,13 @@
+2024-04-30 15:46:49.642 [info] Extension host with pid 165262 started
+2024-04-30 15:46:49.677 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-04-30 15:46:49.722 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-04-30 15:46:49.724 [info] ExtensionService#_doActivateExtension mhutchie.git-graph, startup: true, activationEvent: '*'
+2024-04-30 15:46:49.745 [info] ExtensionService#_doActivateExtension oderwat.indent-rainbow, startup: true, activationEvent: '*'
+2024-04-30 15:46:49.766 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-04-30 15:46:49.793 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-04-30 15:46:49.831 [info] Eager extensions activated
+2024-04-30 15:46:49.862 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-04-30 15:46:49.864 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-04-30 15:46:49.869 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2024-04-30 15:48:59.782 [info] Extension host terminating: renderer closed the MessagePort
+2024-04-30 15:48:59.788 [info] Extension host with pid 165262 exiting with code 0

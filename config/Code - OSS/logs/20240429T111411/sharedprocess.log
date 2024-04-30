@@ -1,0 +1,145 @@
+2024-04-29 11:16:08.790 [info] Getting Manifest... pkief.material-icon-theme
+2024-04-29 11:16:09.099 [info] Installing extension: pkief.material-icon-theme
+2024-04-29 11:16:10.391 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:16:10.410 [info] Extension signature verification is not done: pkief.material-icon-theme
+2024-04-29 11:16:10.894 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/pkief.material-icon-theme-5.1.0-universal: pkief.material-icon-theme
+2024-04-29 11:16:10.898 [info] Renamed to /home/murat/.vscode-oss/extensions/pkief.material-icon-theme-5.1.0-universal
+2024-04-29 11:16:10.901 [info] Extracting extension completed. pkief.material-icon-theme
+2024-04-29 11:16:10.910 [info] Extension installed successfully: pkief.material-icon-theme
+2024-04-29 11:16:10.983 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)
+2024-04-29 11:16:41.611 [info] Getting Manifest... gieson.dupe-file
+2024-04-29 11:16:41.809 [info] Installing extension: gieson.dupe-file
+2024-04-29 11:16:43.512 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:16:43.515 [info] Extension signature verification is not done: gieson.dupe-file
+2024-04-29 11:16:43.609 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/gieson.dupe-file-1.0.5-universal: gieson.dupe-file
+2024-04-29 11:16:43.613 [info] Renamed to /home/murat/.vscode-oss/extensions/gieson.dupe-file-1.0.5-universal
+2024-04-29 11:16:43.614 [info] Extracting extension completed. gieson.dupe-file
+2024-04-29 11:16:43.622 [info] Extension installed successfully: gieson.dupe-file
+2024-04-29 11:16:43.694 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)
+2024-04-29 11:17:01.793 [info] Getting Manifest... oderwat.indent-rainbow
+2024-04-29 11:17:02.133 [info] Installing extension: oderwat.indent-rainbow
+2024-04-29 11:17:04.089 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:17:04.092 [info] Extension signature verification is not done: oderwat.indent-rainbow
+2024-04-29 11:17:04.695 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/oderwat.indent-rainbow-8.3.1-universal: oderwat.indent-rainbow
+2024-04-29 11:17:04.700 [info] Renamed to /home/murat/.vscode-oss/extensions/oderwat.indent-rainbow-8.3.1-universal
+2024-04-29 11:17:04.701 [info] Extracting extension completed. oderwat.indent-rainbow
+2024-04-29 11:17:04.711 [info] Extension installed successfully: oderwat.indent-rainbow
+2024-04-29 11:17:04.784 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)
+2024-04-29 11:17:17.567 [info] Getting Manifest... mhutchie.git-graph
+2024-04-29 11:17:17.796 [info] Installing extension: mhutchie.git-graph
+2024-04-29 11:17:18.870 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:17:18.871 [info] Extension signature verification is not done: mhutchie.git-graph
+2024-04-29 11:17:18.916 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/mhutchie.git-graph-1.30.0-universal: mhutchie.git-graph
+2024-04-29 11:17:18.920 [info] Renamed to /home/murat/.vscode-oss/extensions/mhutchie.git-graph-1.30.0-universal
+2024-04-29 11:17:18.922 [info] Extracting extension completed. mhutchie.git-graph
+2024-04-29 11:17:18.931 [info] Extension installed successfully: mhutchie.git-graph
+2024-04-29 11:17:19.002 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)
+2024-04-29 11:17:27.919 [info] Getting Manifest... redhat.ansible
+2024-04-29 11:17:28.169 [info] Installing extension: redhat.ansible
+2024-04-29 11:17:28.513 [info] Getting Manifest... ms-python.python
+2024-04-29 11:17:29.157 [info] Getting Manifest... ms-python.debugpy
+2024-04-29 11:17:29.520 [info] Getting Manifest... redhat.vscode-yaml
+2024-04-29 11:17:29.801 [info] Installing extension: ms-python.python
+2024-04-29 11:17:29.801 [info] Installing extension: ms-python.debugpy
+2024-04-29 11:17:31.069 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:17:31.071 [info] Extension signature verification is not done: redhat.ansible
+2024-04-29 11:17:31.141 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/redhat.ansible-24.4.0-universal: redhat.ansible
+2024-04-29 11:17:31.146 [info] Renamed to /home/murat/.vscode-oss/extensions/redhat.ansible-24.4.0-universal
+2024-04-29 11:17:31.149 [info] Extracting extension completed. redhat.ansible
+2024-04-29 11:17:31.230 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)
+2024-04-29 11:17:33.024 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:17:33.027 [info] Extension signature verification is not done: ms-python.debugpy
+2024-04-29 11:17:33.378 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/ms-python.debugpy-2024.4.0-linux-x64: ms-python.debugpy
+2024-04-29 11:17:33.383 [info] Renamed to /home/murat/.vscode-oss/extensions/ms-python.debugpy-2024.4.0-linux-x64
+2024-04-29 11:17:33.385 [info] Extracting extension completed. ms-python.debugpy
+2024-04-29 11:17:33.473 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)
+2024-04-29 11:17:34.047 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:17:34.052 [info] Extension signature verification is not done: ms-python.python
+2024-04-29 11:17:35.525 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal: ms-python.python
+2024-04-29 11:17:35.531 [info] Renamed to /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal
+2024-04-29 11:17:35.534 [info] Extracting extension completed. ms-python.python
+2024-04-29 11:17:35.544 [info] Extension installed successfully: redhat.ansible
+2024-04-29 11:17:35.544 [info] Extension installed successfully: ms-python.debugpy
+2024-04-29 11:17:35.544 [info] Extension installed successfully: ms-python.python
+2024-04-29 11:17:35.616 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)
+2024-04-29 11:17:37.764 [info] Getting Manifest... bierner.markdown-preview-github-styles
+2024-04-29 11:17:37.992 [info] Installing extension: bierner.markdown-preview-github-styles
+2024-04-29 11:17:39.054 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-04-29 11:17:39.057 [info] Extension signature verification is not done: bierner.markdown-preview-github-styles
+2024-04-29 11:17:39.263 [info] Extracted extension to file:///home/murat/.vscode-oss/extensions/bierner.markdown-preview-github-styles-0.1.6-universal: bierner.markdown-preview-github-styles
+2024-04-29 11:17:39.267 [info] Renamed to /home/murat/.vscode-oss/extensions/bierner.markdown-preview-github-styles-0.1.6-universal
+2024-04-29 11:17:39.268 [info] Extracting extension completed. bierner.markdown-preview-github-styles
+2024-04-29 11:17:39.275 [info] Extension installed successfully: bierner.markdown-preview-github-styles
+2024-04-29 11:17:39.348 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/murat/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30080)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30195)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36500)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:28946)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16092)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:108402)

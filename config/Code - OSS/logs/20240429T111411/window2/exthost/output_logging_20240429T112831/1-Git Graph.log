@@ -1,0 +1,9 @@
+[2024-04-29 11:28:31.300] Starting Git Graph ...
+[2024-04-29 11:28:31.307] Using git (version: 2.44.0)
+[2024-04-29 11:28:31.313] Started Git Graph - Ready to use!
+[2024-04-29 11:28:31.313] Searching workspace for new repos ...
+[2024-04-29 11:28:31.317] > git rev-parse --show-toplevel
+[2024-04-29 11:28:31.336] Added new repo: /home/murat/git/ansible-role-rke2-cluster
+[2024-04-29 11:28:31.342] Successfully set Visual Studio Code Context "git-graph:codiconsSupported" to "true"
+[2024-04-29 11:28:31.347] Completed searching workspace for new repos
+[2024-04-29 11:28:31.348] Showing "Git Graph" Status Bar Item

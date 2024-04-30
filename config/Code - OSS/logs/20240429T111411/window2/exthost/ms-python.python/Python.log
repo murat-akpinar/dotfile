@@ -1,0 +1,94 @@
+2024-04-29 11:28:44.449 [info] Telemetry level is off
+2024-04-29 11:28:44.449 [info] Experiments are disabled, only manually opted experiments are active.
+2024-04-29 11:28:44.449 [info] Default formatter is set to null for workspace /home/murat/git/ansible-role-rke2-cluster
+2024-04-29 11:28:44.449 [error] Unable to check if shell integration is active [Error: Extension 'ms-python.python' CANNOT use API proposal: terminalDataWriteEvent.
+Its package.json#enabledApiProposals-property declares:  but NOT terminalDataWriteEvent.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:140:51400)
+	at a.onDidWriteTerminalData (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:162:32572)
+	at new g (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:746998)
+	at t.resolveInstance (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007385)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at e.dynamicValue (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2014661)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008782
+	at c (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007828)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008722
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008241
+	at Array.map (<anonymous>)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008213
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at a.get (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:463338)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:384002
+	at async t.activateComponents (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:382289)
+	at async /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2928053
+	at async e (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2927585)
+	at async a.n (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:142:6237)
+	at async a.m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:142:6200)
+	at async a.l (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:142:5657)]
+2024-04-29 11:28:44.449 [info] Test server listening.
+2024-04-29 11:28:44.449 [info] > conda info --json
+2024-04-29 11:28:44.449 [info] > hatch env show --json
+2024-04-29 11:28:44.449 [info] cwd: .
+2024-04-29 11:28:44.449 [info] > pyenv which python
+2024-04-29 11:28:44.449 [info] cwd: .
+2024-04-29 11:28:44.450 [info] Found: /bin/python --> /bin/python3.12
+2024-04-29 11:28:44.467 [info] Found: /bin/python3 --> /bin/python3.12
+2024-04-29 11:28:44.586 [info] Found: /bin/python3.12 --> /bin/python3.12
+2024-04-29 11:28:44.630 [info] Found: /sbin/python --> /sbin/python3.12
+2024-04-29 11:28:44.631 [info] Found: /sbin/python3 --> /sbin/python3.12
+2024-04-29 11:28:44.631 [info] Found: /sbin/python3.12 --> /sbin/python3.12
+2024-04-29 11:28:44.634 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2024-04-29 11:28:44.634 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2024-04-29 11:28:44.634 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2024-04-29 11:28:44.650 [info] Found: /usr/sbin/python --> /usr/sbin/python3.12
+2024-04-29 11:28:44.650 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.12
+2024-04-29 11:28:44.650 [info] Found: /usr/sbin/python3.12 --> /usr/sbin/python3.12
+2024-04-29 11:28:44.666 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-04-29 11:28:44.675 [info] > /sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-04-29 11:28:44.708 [info] > /usr/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-04-29 11:28:44.716 [info] > /usr/sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-04-29 11:28:44.764 [error] [
+  'Failed to activate a workspace, Class name = g, completed in 359ms, has a falsy return value, Arg 1: <Uri:/home/murat/git/ansible-role-rke2-cluster/inventory/cluster_inventory.yml>, Arg 2: {"started":1714379324349}, Return Value: undefined',
+  [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+  	at C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:140:51400)
+  	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:162:25277)
+  	at T.activate (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+  	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+  	at Array.map (<anonymous>)
+  	at g.activateWorkspace (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+]
+2024-04-29 11:28:44.764 [error] Failure during activation. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:140:51400)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:162:25277)
+	at T.activate (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+2024-04-29 11:28:44.764 [error] sendStartupTelemetry() failed. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:140:51400)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:162:25277)
+	at T.activate (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+	at /home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/murat/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+2024-04-29 11:28:44.768 [info] Python interpreter path: /bin/python
+2024-04-29 11:28:45.640 [info] Starting Jedi language server for ansible-role-rke2-cluster.

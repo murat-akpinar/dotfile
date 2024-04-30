@@ -1,0 +1,31 @@
+2024-04-29 11:28:31.401 [info] Log level: Info
+2024-04-29 11:28:31.401 [info] Validating found git in: "git"
+2024-04-29 11:28:31.401 [info] Using git "2.44.0" from "git"
+2024-04-29 11:28:31.401 [info] > git rev-parse --show-toplevel [5ms]
+2024-04-29 11:28:31.401 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2024-04-29 11:28:31.411 [info] Open repository: /home/murat/git/ansible-role-rke2-cluster
+2024-04-29 11:28:31.431 [info] > git rev-parse --show-toplevel [6ms]
+2024-04-29 11:28:31.432 [info] > git config --get commit.template [10ms]
+2024-04-29 11:28:31.440 [info] > git rev-parse --show-toplevel [4ms]
+2024-04-29 11:28:31.444 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2024-04-29 11:28:31.447 [warning] ENOENT: no such file or directory, open '/home/murat/git/ansible-role-rke2-cluster/.git/refs/remotes/origin/main'
+2024-04-29 11:28:31.447 [info] > git rev-parse --show-toplevel [4ms]
+2024-04-29 11:28:31.448 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-04-29 11:28:31.455 [info] > git status -z -uall [3ms]
+2024-04-29 11:28:31.468 [info] > git merge-base refs/heads/main refs/remotes/origin/main [9ms]
+2024-04-29 11:28:31.484 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [11ms]
+2024-04-29 11:28:31.488 [info] > git config --get commit.template [20ms]
+2024-04-29 11:28:31.493 [info] > git diff --name-status -z --diff-filter=ADMR 0968357d319faf3fcac6dd202cfd03736ce439b1...refs/remotes/origin/main [5ms]
+2024-04-29 11:28:31.494 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-04-29 11:28:31.499 [warning] ENOENT: no such file or directory, open '/home/murat/git/ansible-role-rke2-cluster/.git/refs/remotes/origin/main'
+2024-04-29 11:28:31.500 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-04-29 11:28:31.507 [info] > git status -z -uall [3ms]
+2024-04-29 11:28:31.949 [info] > git check-ignore -v -z --stdin [5ms]
+2024-04-29 11:28:42.526 [info] > git show --textconv :LICENSE [16ms]
+2024-04-29 11:28:42.531 [info] > git ls-files --stage -- /home/murat/git/ansible-role-rke2-cluster/LICENSE [7ms]
+2024-04-29 11:28:42.547 [info] > git cat-file -s f288702d2fa16d3cdf0035b15a9fcbc552cd88e7 [3ms]
+2024-04-29 11:28:43.570 [info] > git check-ignore -v -z --stdin [1ms]
+2024-04-29 11:28:44.368 [info] > git check-ignore -v -z --stdin [6ms]
+2024-04-29 11:28:44.378 [info] > git show --textconv :inventory/cluster_inventory.yml [5ms]
+2024-04-29 11:28:44.414 [info] > git ls-files --stage -- /home/murat/git/ansible-role-rke2-cluster/inventory/cluster_inventory.yml [37ms]
+2024-04-29 11:28:44.435 [info] > git cat-file -s 0358e5cced65154452e4c2a7529cdc26c1cfefed [17ms]
