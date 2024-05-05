@@ -28,6 +28,24 @@ alias scpfile='function _scpcp() {
     unset -f _scpcp;
 }; _scpcp'
 
+alias rcpfile='function _cpcp() {
+    rsync -ah --progress "$1" "$2";
+    dosya=$(basename "$1");
+    if [ -d "$2" ]; then
+        hedef_dizin="$2";
+        tam_hedef="$hedef_dizin/$dosya";
+    else
+        tam_hedef="$2";
+    fi
+    hash_kaynak=$(sha256sum "$1" | awk "{ print \$1 }");
+    hash_hedef=$(sha256sum "$tam_hedef" | awk "{ print \$1 }");
+    if [ "$hash_kaynak" == "$hash_hedef" ]; then
+        echo "Başarılı: Dosya bütünlüğü doğrulandı.";
+    else
+        echo "Başarısız: Dosya bütünlüğü doğrulanamadı!";
+    fi;
+    unset -f _cpcp;
+}; _cpcp'
 
 
 #### DOCKER #####
