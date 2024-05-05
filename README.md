@@ -25,7 +25,7 @@ ip adresli ekstra bir kurulum gerektirmeyen
 murat@pxe[192.168.1.154 ]:/home/murat $>
 ````
 ````bash
-export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[\e[38;5;203m\][\$(hostname -I | awk '{print \$1}')]\[\e[m\]\[\e[38;5;215m\] \w\[\e[m\] \[\e[01;31m\]> "
+export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[\e[38;5;203m\][\$(hostname -I | awk '{print \$1}')]\[\e[m\]\[\e[38;5;215m\] \w\[\e[38;5;141m\] > \[\e[m\]"
 
 ````
 vscode eklentileir
