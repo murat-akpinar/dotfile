@@ -6,8 +6,6 @@ end
 
 neofetch
 
-
-
 # List Directory
 alias ls="lsd"
 alias l="ls -l"
@@ -28,6 +26,8 @@ abbr mkdir 'mkdir -p'
 ####
 
 alias ll='ls -lvrt'
+
+alias vim='nvim'
 
 alias cdd='cd ..'
 alias cddd='cd ../..'
