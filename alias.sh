@@ -3,9 +3,9 @@
 cat <<EOL >> ~/.bashrc
 alias ll='ls -lvrt'
 
-sshno='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
-scpno='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
-ssh-copy-idno='ssh-copy-id -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
+alias sshno='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
+alias scpno='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
+alias ssh-copy-idno='ssh-copy-id -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
 
 alias cdd='cd ..'
 alias cddd='cd ../..'
