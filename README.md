@@ -37,4 +37,5 @@ bierner.markdown-preview-github-styles
 PKief.material-icon-theme
 redhat.vscode-yaml
 starkwang.markdown
+xcad2k.vscode-thedigitallife
 ```
