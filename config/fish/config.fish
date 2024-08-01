@@ -97,6 +97,4 @@ alias knewtoken='kubeadm token create --print-join-command'
 #### K8S ####
 
 
-alias skube-login-ubuntu='docker run --name skube-builder --rm -it  skube/skube-builder:0.62-u /bin/bash'
-alias skube-login-oracle='docker run --name skube-builder --rm -it  skube/skube-builder:0.70-ol-mehkks /bin/bash'
 
