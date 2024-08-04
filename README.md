@@ -22,10 +22,11 @@ echo ':set number' >> ~/.vim/vimrc
 ````bash
 echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[\e[38;5;203m\][\$(hostname -I | awk '\''{print \$1}'\'')]\[\e[m\]\[\e[38;5;215m\] \w\[\e[38;5;141m\] > \[\e[m\]"' >> ~/.bashrc
 ````
-![PS1](https://r.resimlink.com/sK2BH3kI1T.png)
+![bash](https://r.resimlink.com/sK2BH3kI1T.png)
 
 
-
+## Garuda Linux Fish
+![bash](https://resimlink.com/7AemkCHE62Q0)
 
 ## vscode eklentileir
 ```bash
