@@ -26,7 +26,8 @@ echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[
 
 
 ## Garuda Linux Fish
-![garuda-linux-fish](https://resimlink.com/7AemkCHE62Q0](https://r.resimlink.com/7AemkCHE62Q0.png)
+
+![garuda-linux-fish](https://r.resimlink.com/7AemkCHE62Q0.png)
 
 ## vscode eklentileir
 ```bash
