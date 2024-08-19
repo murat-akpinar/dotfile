@@ -180,7 +180,7 @@ alias cdd='cd ..'
 alias cddd='cd ../..'
 
 alias du='du -sh *'
-alias bcat='batcat'
+alias bcat='bat'
 alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 
 alias outtar="tar -xzvf"
