@@ -165,12 +165,13 @@ alias jctl 'journalctl -p 3 -xb'
 # Recent installed packages
 alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 
-## Run fastfetch if session is interactive
-#if status --is-interactive && type -q fastfetch
-#   fastfetch --config neofetch.jsonc
-#end
-#
+# Run fastfetch if session is interactive
+if status --is-interactive && type -q fastfetch
+    fastfetch --load-config dr460nized
+end
 
+alias wg-up='sudo wg-quick up wg0'
+alias wg-down='sudo wg-quick down wg0'
 
 alias ssh='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
 alias scp='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
@@ -185,3 +186,4 @@ alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 
 alias outtar="tar -xzvf"
 alias inntar="tar -cvf"
+

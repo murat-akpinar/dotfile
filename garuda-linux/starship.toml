@@ -83,6 +83,9 @@ pipestatus = true
 symbol = "🔴"
 
 [aws]
+format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
+disabled = false
+style = 'bold blue'
 symbol = " "
 
 [conda]
@@ -92,7 +95,14 @@ symbol = " "
 symbol = " "
 
 [docker_context]
-symbol = " "
+disabled = true
+format = 'via [🐋 $context](blue bold)'
+
+[kubernetes]
+format = '[☸ $context \($namespace\)](dimmed green) '
+
+[terraform]
+format = '[󱁢 $workspace]($style) '
 
 [elixir]
 symbol = " "
