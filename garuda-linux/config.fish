@@ -167,7 +167,8 @@ alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 
 # Run fastfetch if session is interactive
 if status --is-interactive && type -q fastfetch
-    fastfetch --load-config dr460nized
+#    fastfetch --load-config dr460nized
+    fastfetch --load-config dracula
 end
 
 alias wg-up='sudo wg-quick up wg0'
