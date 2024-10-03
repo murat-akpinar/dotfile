@@ -16,6 +16,8 @@ alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 
 alias outtar='tar -xzvf'
 alias inntar='tar -cvf' 
+alias log-find='journalctl -xfeu'
+alias port-find='ss -tuln | grep'
 
 alias scpfile='function _scpcp() {
     scp "$1" "$2";
