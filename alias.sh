@@ -10,7 +10,7 @@ alias ssh-copy-idno='ssh-copy-id -o "StrictHostKeyChecking no" -o "UserKnownHost
 alias cdd='cd ..'
 alias cddd='cd ../..'
 
-alias du='du -sh *'
+alias du='du -sh'
 alias bcat='batcat'
 alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 
