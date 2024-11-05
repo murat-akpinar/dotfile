@@ -188,3 +188,5 @@ alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
 alias outtar="tar -xzvf"
 alias inntar="tar -cvf"
 
+alias lastf="find . -type f -printf '%TY-%Tm-%Td %TH:%TM %p\n' | sort -r | head -n 10"
+
