@@ -177,10 +177,6 @@ alias wg-down='sudo wg-quick down wg0'
 alias ssh='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
 alias scp='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
 
-
-alias cdd='cd ..'
-alias cddd='cd ../..'
-
 alias du='du -sh *'
 alias bcat='bat'
 alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
