@@ -9,10 +9,10 @@ alias ssh-copy-idno='ssh-copy-id -o "StrictHostKeyChecking no" -o "UserKnownHost
 
 alias du='du -sh'
 alias bcat='batcat'
-c
 
-alias outtar='tar -xzvf'
-alias inntar='tar -cvf' 
+alias tarnow 'tar -acf '
+alias untar 'tar -zxvf '
+alias jctl 'journalctl -p 3 -xb'
 alias log-find='journalctl -xfeu'
 alias port-find='ss -tuln | grep'
 
