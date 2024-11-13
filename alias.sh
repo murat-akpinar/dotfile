@@ -19,6 +19,7 @@ alias port-find='ss -tuln | grep'
 
 #### DOCKER #####
 alias d='docker'
+alias dps='docker ps'
 alias dcon='docker container'
 alias dcom='docker compose'
 alias dll='docker images'
