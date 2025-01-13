@@ -159,6 +159,9 @@ alias tb 'nc termbin.com 9999'
 alias helpme 'echo "To print basic information about a command use tldr <command>"'
 alias pacdiff 'sudo -H DIFFPROG=meld pacdiff'
 
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+
+
 # Get the error messages from journalctl
 alias jctl 'journalctl -p 3 -xb'
 
@@ -167,12 +170,18 @@ alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 
 # Run fastfetch if session is interactive
 if status --is-interactive && type -q fastfetch
-#    fastfetch --load-config dr460nized
-fastfetch --load-config dracula
+#    fastfetch --load-config dracula
+#    fastfetch
+neofetch
 end
 
+alias vi='nvim'
+alias vim='nvim'
+alias tr='traceroute'
 alias wg-up='sudo wg-quick up wg0'
 alias wg-down='sudo wg-quick down wg0'
+alias whois='ps aux | grep pts'
+
 
 alias ssh='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
 alias scp='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
@@ -187,3 +196,6 @@ alias port-find='ss -tuln | grep'
 # DOCKER Alias #
 #
 alias d='docker'
+alias dcom='docker compose'
+alias dls='docker images'
+alias dps='docker container ps'
