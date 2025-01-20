@@ -22,7 +22,7 @@ alias d='docker'
 alias dps='docker ps'
 alias dcon='docker container'
 alias dcom='docker compose'
-alias dll='docker images'
+alias dls='docker images'
 
 alias ddel='docker container rm $(docker container ls -aq)'
 alias dstop='docker stop $(docker ps -q)'
