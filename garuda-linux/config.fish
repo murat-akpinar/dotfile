@@ -175,27 +175,67 @@ if status --is-interactive && type -q fastfetch
 neofetch
 end
 
+### SHORTCUTS ###
 alias vi='nvim'
 alias vim='nvim'
-alias tr='traceroute'
 alias wg-up='sudo wg-quick up wg0'
 alias wg-down='sudo wg-quick down wg0'
-alias whois='ps aux | grep pts'
+alias whoiss='ps aux | grep pts'
+alias secheaders='~/.local/bin/secheaders'
+alias myhistory='bash ~/GIT/myhistory/myhistory.sh'
+alias upsacle='flatpak run io.gitlab.theevilskeleton.Upscaler'
 
+### ALIAS ###
+
+alias du='du -sh'
+alias bcat='bat'
+
+## SSH ##
 
 alias ssh='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
 alias scp='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
 
-alias du='du -sh'
-alias bcat='bat'
+## SSH ##
+
+
+## FIND ##
+
 alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
-
 alias lastf="find . -type f -printf '%TY-%Tm-%Td %TH:%TM %p\n' | sort -r | head -n 10"
-alias port-find='ss -tuln | grep'
 
-# DOCKER Alias #
-#
+## FIND ##
+
+## NETWORK ##
+
+alias port-find='sudo ss -tulnp | grep'
+alias checkport='sudo ss -tulnp'
+alias tr='traceroute'
+alias myip='curl ifconfig.me'
+
+## NETWORK ##
+
+## DOCKER ##
+
 alias d='docker'
+alias dps='docker ps'
+alias dcon='docker container'
 alias dcom='docker compose'
 alias dls='docker images'
-alias dps='docker container ps'
+
+alias ddel='docker container rm $(docker container ls -aq)'
+alias dstop='docker stop $(docker ps -q)'
+
+#belirtilen netwwork ismine bağlı networkleri listeler
+alias dn="docker network inspect --format='{{range .Containers}} {{.Name}} {{end}}'"
+#belirtilen container'in ip adresini verir
+alias dip="docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}'"
+
+
+## DOCKER ##
+
+## GLOBAL ENV ##
+
+export EDITOR=nvim
+export VISUAL=nvim
+
+## GLOBAL ENV ##
