@@ -1,96 +1,112 @@
 [Background]
-Color=36,39,58
+Color=30,30,46
+RandomHueRange=360
+RandomSaturationRange=100
 
 [BackgroundFaint]
-Color=36,39,58
+Color=30,30,46
+RandomHueRange=360
+RandomSaturationRange=100
 
 [BackgroundIntense]
-Color=36,39,58
+Color=30,30,46
+RandomHueRange=360
+RandomSaturationRange=100
 
 [Color0]
-Color=110,115,141
+Color=108,112,134
 
 [Color0Faint]
-Color=110,115,141
+Color=108,112,134
 
 [Color0Intense]
-Color=110,115,141
+Color=108,112,134
 
 [Color1]
-Color=237,135,150
+Color=243,139,168
 
 [Color1Faint]
-Color=237,135,150
+Color=243,139,168
 
 [Color1Intense]
-Color=237,135,150
+Color=243,139,168
 
 [Color2]
-Color=166,218,149
+Color=166,227,161
 
 [Color2Faint]
-Color=166,218,149
+Color=166,227,161
 
 [Color2Intense]
-Color=166,218,149
+Color=166,227,161
 
 [Color3]
-Color=238,212,159
+Color=250,179,135
 
 [Color3Faint]
-Color=238,212,159
+Color=250,179,135
 
 [Color3Intense]
-Color=238,212,159
+Color=250,179,135
 
 [Color4]
-Color=138,173,244
+Color=203,166,247
 
 [Color4Faint]
-Color=138,173,244
+Color=203,166,247
 
 [Color4Intense]
-Color=138,173,244
+Color=203,166,247
 
 [Color5]
-Color=198,160,246
+Color=137,180,250
 
 [Color5Faint]
-Color=198,160,246
+Color=137,180,250
 
 [Color5Intense]
-Color=198,160,246
+Color=137,180,250
 
 [Color6]
-Color=145,215,227
+Color=116,199,236
 
 [Color6Faint]
-Color=145,215,227
+Color=116,199,236
 
 [Color6Intense]
-Color=145,215,227
+Color=116,199,236
 
 [Color7]
-Color=202,211,245
+Color=205,214,244
 
 [Color7Faint]
-Color=202,211,245
+Color=205,214,244
 
 [Color7Intense]
-Color=202,211,245
+Color=205,214,244
 
 [Foreground]
-Color=202,211,245
+Color=205,214,244
+RandomHueRange=360
+RandomSaturationRange=100
 
 [ForegroundFaint]
-Color=202,211,245
+Color=205,214,244
+RandomHueRange=360
+RandomSaturationRange=100
 
 [ForegroundIntense]
-Color=202,211,245
+Color=205,214,244
+RandomHueRange=360
+RandomSaturationRange=100
 
 [General]
-Blur=false
+Anchor=0.5,0.5
+Blur=true
 ColorRandomization=false
-Description=Catppuccin Macchiato
-Opacity=1
+Description=Catppuccin Mocha
+FillStyle=Tile
+Opacity=0.7
 Wallpaper=
+WallpaperFlipType=NoFlip
+WallpaperOpacity=1
