@@ -1,9 +1,6 @@
 [Desktops]
-Id_1=6f44f9b7-a313-4269-b585-9e61d81cd118
-Id_2=c3f5da50-c794-42df-9623-a16534ee7583
-Id_3=604242bc-7a6a-4690-9369-87acf405620a
-Id_4=d3b505f2-02fd-4a65-93a3-eac31b80d371
-Number=4
+Id_1=cb2ec906-18ee-4f14-a4ba-6d2d6bef1a5a
+Number=1
 Rows=1
 
 [Effect-blur]
@@ -26,25 +23,25 @@ LayoutName=coverswitch
 [Tiling]
 padding=4
 
-[Tiling][0fd07f4f-25be-5792-a61f-e764bb1ea9f0]
+[Tiling][2e139822-48cc-5fd4-9067-e4c752a5026e]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][2ba25cca-cf39-5a2d-8149-b2e945b2d6a6]
+[Tiling][8ffca47e-38f5-507f-aaca-14b05eb56263]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][44482645-6cac-566d-af56-30ff7259c519]
+[Tiling][a0d58239-e965-5a63-81df-092187418d27]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][82ec039d-8cd4-532d-a398-7501b999952b]
+[Tiling][b46edb21-c468-5c9a-bc93-03cafb1ee32f]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][92e842d7-5928-5c43-884a-4912e7cc82ed]
+[Tiling][d3c0bd12-7b1e-58f8-9840-e33482528be2]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][b36b4a23-426a-5610-8190-ead9e80af8ff]
+[Tiling][f5edabb0-7b3b-5386-822c-0c6e2116b347]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][d53e90f5-43f5-549e-8efe-4ba5560f5458]
+[Tiling][fc0d9a43-96e5-5fef-b827-62597c398a40]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
@@ -57,3 +54,4 @@ Scale=1
 BorderSizeAuto=false
 ButtonsOnLeft=
 ButtonsOnRight=IAX
+theme=__aurorae__svg__CatppuccinMocha-Classic
