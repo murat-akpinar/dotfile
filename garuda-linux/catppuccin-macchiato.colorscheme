@@ -14,10 +14,10 @@ RandomHueRange=360
 RandomSaturationRange=100
 
 [Color0]
-Color=108,112,134
+Color=30,30,46
 
 [Color0Faint]
-Color=108,112,134
+Color=30,30,46
 
 [Color0Intense]
 Color=108,112,134
@@ -106,7 +106,7 @@ Blur=true
 ColorRandomization=false
 Description=Catppuccin Mocha
 FillStyle=Tile
-Opacity=0.7
+Opacity=0.62
 Wallpaper=
 WallpaperFlipType=NoFlip
 WallpaperOpacity=1
