@@ -37,7 +37,7 @@ alias dip="docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}
 #### K8S ####
 alias k='kubectl'
 
-function kctx
+function kset
     set ns $argv[1]
     kubectl config set-context --current --namespace=$ns
 end
