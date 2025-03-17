@@ -3,20 +3,20 @@
 [username]
 format = "[$user]($style)@"
 show_always = true
-style_root = "bold #50FA7B"
-style_user = "bold #50FA7B"
+style_root = "bold #ff5555"
+style_user = "bold #a6e3a1"
 
 # Second param
 [hostname]
 disabled = false
-format = "[$hostname]($style) in "
+format = "[$hostname]($style) [in ](bold #cba6f7)"
 ssh_only = false
-style = "bold #FF79C6"
+style = "bold #89b4fa"
 trim_at = "-"
 
 # Third param
 [directory]
-style = "bold #FFB86C"
+style = "bold #fab387"
 truncate_to_repo = true
 truncation_length = 0
 truncation_symbol = "repo: "
@@ -31,7 +31,8 @@ ahead = "⇡${count}"
 behind = "⇣${count}"
 deleted = "x"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-style = "bold #BD93F9"
+style = "bold #74c7ec"
+
 
 # Last param in the first line/row
 [cmd_duration]
@@ -69,10 +70,6 @@ format = " 🕙 $time($style)\n"
 style = "bright-white"
 time_format = "%T"
 
-# Prompt: param 2
-[character]
-#error_symbol = " [×](bold red)"
-#success_symbol = " [╰─λ](bold red)"
 
 # SYMBOLS
 [status]
@@ -94,12 +91,10 @@ symbol = " "
 [dart]
 symbol = " "
 
-[docker_context]
-disabled = true
-format = 'via [🐋 $context](blue bold)'
 
-[kubernetes]
-format = '[☸ $context \($namespace\)](dimmed green) '
+[docker_context]
+disabled = false
+format = 'via [🐋 $context](blue bold)'
 
 [terraform]
 format = '[󱁢 $workspace]($style) '
@@ -154,3 +149,7 @@ symbol = " "
 
 [swift]
 symbol = "ﯣ "
+
+[kubernetes]
+format = 'on [ ($user on )($cluster in )$context \($namespace\)](#3970e4) '
+disabled = false
