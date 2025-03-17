@@ -36,13 +36,17 @@ alias dip="docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}
 
 #### K8S ####
 alias k='kubectl'
-alias kns='kubectl config set-context --current --namespace'
 
+function kctx
+    set ns $argv[1]
+    kubectl config set-context --current --namespace=$ns
+end
+alias kcn='kubectl create namespace'
 
 alias ks='kubectl -n kube-system'
 alias kcf='kubectl create -f'
 alias kaf='kubectl apply -f'
-alias kcn='kubectl create namespace'
+
 
 alias kn='kubectl get nodes'
 alias kp='kubectl get pods'
@@ -50,7 +54,7 @@ alias kns='kubectl get ns'
 
 alias kpedit='kubectl edit pods'
 alias kpdes='kubectl describe pod'
-alias kpall='kubectl get pods -A'
+alias kls='kubectl get pods -A'
 
 alias kexp='kubectl explain'
 alias klog='kubectl logs'
