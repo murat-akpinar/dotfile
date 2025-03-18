@@ -65,10 +65,10 @@ alias dip="docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}
 alias k='kubectl'
 alias ki='kubectl cluster-info'
 
-function kset
-set ns $argv[1]
-kubectl config set-context --current --namespace=$ns
-end
+function kset() {
+    local ns="$1"
+    kubectl config set-context --current --namespace="$ns"
+}
 
 alias ks='kubectl -n kube-system'
 alias kcf='kubectl create -f'
