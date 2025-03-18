@@ -1,23 +1,47 @@
 #!/bin/bash
 
 cat <<EOL >> ~/.bashrc
-alias ll='ls -lvrt'
+### SHORTCUTS ###
+alias vi='nvim'
+alias vim='nvim'
+alias wg-up='sudo wg-quick up wg0'
+alias wg-down='sudo wg-quick down wg0'
+alias whoiss='ps aux | grep pts'
+alias secheaders='~/.local/bin/secheaders'
+alias myhistory='bash ~/GIT/myhistory/myhistory.sh'
+alias upsacle='flatpak run io.gitlab.theevilskeleton.Upscaler'
 
-alias sshno='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
-alias scpno='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
-alias ssh-copy-idno='ssh-copy-id -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
+### ALIAS ###
 
 alias du='du -sh'
-alias bcat='batcat'
+alias bcat='bat'
 
-alias tarnow 'tar -acf '
-alias untar 'tar -zxvf '
-alias jctl 'journalctl -p 3 -xb'
-alias log-find='journalctl -xfeu'
-alias port-find='ss -tuln | grep'
+## SSH ##
+
+alias ssh='ssh -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
+alias scp='scp -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null"'
+
+## SSH ##
 
 
-#### DOCKER #####
+## FIND ##
+
+alias chng='find . -print0 | xargs -0 stat -c "%Z %z %n" | sort -nr | head -10'
+alias lastf="find . -type f -printf '%TY-%Tm-%Td %TH:%TM %p\n' | sort -r | head -n 10"
+
+## FIND ##
+
+## NETWORK ##
+
+alias port-find='sudo ss -tulnp | grep'
+alias checkport='sudo ss -tulnp'
+alias tr='traceroute'
+alias myip='curl ifconfig.me'
+
+## NETWORK ##
+
+## DOCKER ##
+
 alias d='docker'
 alias dps='docker ps'
 alias dcon='docker container'
@@ -32,34 +56,38 @@ alias dn="docker network inspect --format='{{range .Containers}} {{.Name}} {{end
 #belirtilen container'in ip adresini verir
 alias dip="docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}'"
 
-#### DOCKER ####
 
-#### K8S ####
+## DOCKER ##
+
+
+## K8S ##
+
 alias k='kubectl'
+alias ki='kubectl cluster-info'
 
 function kset
-    set ns $argv[1]
-    kubectl config set-context --current --namespace=$ns
+set ns $argv[1]
+kubectl config set-context --current --namespace=$ns
 end
-alias kcn='kubectl create namespace'
 
 alias ks='kubectl -n kube-system'
 alias kcf='kubectl create -f'
-alias kaf='kubectl apply -f'
+alias kcn='kubectl create namespace'
+alias kdn='kubectl delete namespace'
 
-
-alias kn='kubectl get nodes'
+alias knls='kubectl get nodes'
 alias kp='kubectl get pods'
 alias kns='kubectl get ns'
-
-alias kpedit='kubectl edit pods'
-alias kpdes='kubectl describe pod'
 alias kls='kubectl get pods -A'
+alias kll='kubectl get all'
+
+alias kapp='kubectl apply -f'
+
+alias kedit='kubectl edit pods'
+alias kdes='kubectl describe pod'
 
 alias kexp='kubectl explain'
 alias klog='kubectl logs'
-alias kall='kubectl get all'
-
 
 alias krs='kubectl get rs'
 alias kpvc='kubectl get pvc'
@@ -72,9 +100,17 @@ alias krmf='kubectl delete -f'
 alias kdp='kubectl delete pod'
 alias kds='kubectl delete service'
 alias kdd='kubectl delete deployment'
-alias kdn='kubectl delete namespace'
 alias knewtoken='kubeadm token create --print-join-command'
-#### K8S ####
+
+## K8S ##
+
+## GLOBAL ENV ##
+
+export EDITOR=nvim
+export VISUAL=nvim
+export KUBECONFIG=/home/shyuuhei/.kube/config
+## GLOBAL ENV ##
+
 EOL
 
 source ~/.bashrc
