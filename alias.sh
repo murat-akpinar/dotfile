@@ -4,17 +4,10 @@ cat <<EOL >> ~/.bashrc
 ### SHORTCUTS ###
 alias vi='nvim'
 alias vim='nvim'
-alias wg-up='sudo wg-quick up wg0'
-alias wg-down='sudo wg-quick down wg0'
 alias whoiss='ps aux | grep pts'
 alias secheaders='~/.local/bin/secheaders'
-alias myhistory='bash ~/GIT/myhistory/myhistory.sh'
-alias upsacle='flatpak run io.gitlab.theevilskeleton.Upscaler'
 
 ### ALIAS ###
-
-alias du='du -sh'
-alias bcat='bat'
 
 ## SSH ##
 
@@ -105,10 +98,8 @@ alias knewtoken='kubeadm token create --print-join-command'
 ## K8S ##
 
 ## GLOBAL ENV ##
-
 export EDITOR=nvim
 export VISUAL=nvim
-export KUBECONFIG=/home/shyuuhei/.kube/config
 ## GLOBAL ENV ##
 
 EOL
