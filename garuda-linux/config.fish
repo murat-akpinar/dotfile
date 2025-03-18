@@ -233,9 +233,54 @@ alias dip="docker inspect -f '{{range .NetworkSettings.Networks}} {{.IPAddress}}
 
 ## DOCKER ##
 
+
+## K8S ##
+
+alias k='kubectl'
+alias ki='kubectl cluster-info'
+
+function kset
+set ns $argv[1]
+kubectl config set-context --current --namespace=$ns
+end
+
+alias ks='kubectl -n kube-system'
+alias kcf='kubectl create -f'
+alias kcn='kubectl create namespace'
+alias kdn='kubectl delete namespace'
+
+alias knls='kubectl get nodes'
+alias kp='kubectl get pods'
+alias kns='kubectl get ns'
+alias kls='kubectl get pods -A'
+alias kll='kubectl get all'
+
+alias kapp='kubectl apply -f'
+
+alias kedit='kubectl edit pods'
+alias kdes='kubectl describe pod'
+
+alias kexp='kubectl explain'
+alias klog='kubectl logs'
+
+alias krs='kubectl get rs'
+alias kpvc='kubectl get pvc'
+alias ksvc='kubectl get svc'
+alias kgs='kubectl get services'
+alias kgd='kubectl get deployments'
+
+alias krm='kubectl delete'
+alias krmf='kubectl delete -f'
+alias kdp='kubectl delete pod'
+alias kds='kubectl delete service'
+alias kdd='kubectl delete deployment'
+alias knewtoken='kubeadm token create --print-join-command'
+
+## K8S ##
+
 ## GLOBAL ENV ##
 
 export EDITOR=nvim
 export VISUAL=nvim
-
+export KUBECONFIG=/home/shyuuhei/.kube/config
 ## GLOBAL ENV ##
