@@ -151,5 +151,5 @@ symbol = " "
 symbol = "ﯣ "
 
 [kubernetes]
-format = 'on [ ($cluster in )\($namespace\)](#3970e4) '
+format = 'on [ ($cluster in )\($namespace\)](#8aadf4) '
 disabled = false
