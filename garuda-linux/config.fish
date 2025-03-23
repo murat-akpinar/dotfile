@@ -8,7 +8,7 @@ set -x SHELL /usr/bin/fish
 
 ## Export variable need for qt-theme
 if type "qtile" >> /dev/null 2>&1
-set -x QT_QPA_PLATFORMTHEME "qt5ct"
+   set -x QT_QPA_PLATFORMTHEME "qt5ct"
 end
 
 # Set settings for https://github.com/franciscolourenco/done
@@ -19,27 +19,27 @@ set -U __done_notification_urgency_level low
 ## Environment setup
 # Apply .profile: use this to put fish compatible .profile stuff in
 if test -f ~/.fish_profile
-source ~/.fish_profile
+  source ~/.fish_profile
 end
 
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
-if not contains -- ~/.local/bin $PATH
-set -p PATH ~/.local/bin
-end
+    if not contains -- ~/.local/bin $PATH
+        set -p PATH ~/.local/bin
+    end
 end
 
 # Add depot_tools to PATH
 if test -d ~/Applications/depot_tools
-if not contains -- ~/Applications/depot_tools $PATH
-set -p PATH ~/Applications/depot_tools
-end
+    if not contains -- ~/Applications/depot_tools $PATH
+        set -p PATH ~/Applications/depot_tools
+    end
 end
 
 
 ## Starship prompt
 if status --is-interactive
-source ("/usr/bin/starship" init fish --print-full-init | psub)
+   source ("/usr/bin/starship" init fish --print-full-init | psub)
 end
 
 
@@ -50,58 +50,58 @@ end
 ## Functions
 # Functions needed for !! and !$ https://github.com/oh-my-fish/plugin-bang-bang
 function __history_previous_command
-switch (commandline -t)
-case "!"
-commandline -t $history[1]; commandline -f repaint
-case "*"
-commandline -i !
-end
+  switch (commandline -t)
+  case "!"
+    commandline -t $history[1]; commandline -f repaint
+  case "*"
+    commandline -i !
+  end
 end
 
 function __history_previous_command_arguments
-switch (commandline -t)
-case "!"
-commandline -t ""
-commandline -f history-token-search-backward
-case "*"
-commandline -i '$'
-end
+  switch (commandline -t)
+  case "!"
+    commandline -t ""
+    commandline -f history-token-search-backward
+  case "*"
+    commandline -i '$'
+  end
 end
 
 if [ "$fish_key_bindings" = fish_vi_key_bindings ];
-bind -Minsert ! __history_previous_command
-bind -Minsert '$' __history_previous_command_arguments
+  bind -Minsert ! __history_previous_command
+  bind -Minsert '$' __history_previous_command_arguments
 else
-bind ! __history_previous_command
-bind '$' __history_previous_command_arguments
+  bind ! __history_previous_command
+  bind '$' __history_previous_command_arguments
 end
 
-# Fish command history
-function history
-builtin history --show-time='%F %T '
-end
+# Fish command history burası
+#function history
+#builtin history --show-time='%F %T '
+#end
 
 function backup --argument filename
-cp $filename $filename.bak
+    cp $filename $filename.bak
 end
 
 # Copy DIR1 DIR2
 function copy
-set count (count $argv | tr -d \n)
-if test "$count" = 2; and test -d "$argv[1]"
-set from (echo $argv[1] | string trim --right --chars=/)
-set to (echo $argv[2])
-command cp -r $from $to
-else
-command cp $argv
-end
+    set count (count $argv | tr -d \n)
+    if test "$count" = 2; and test -d "$argv[1]"
+	set from (echo $argv[1] | string trim --right --chars=/)
+	set to (echo $argv[2])
+        command cp -r $from $to
+    else
+        command cp $argv
+    end
 end
 
 # Cleanup local orphaned packages
 function cleanup
-while pacman -Qdtq
-sudo pacman -R (pacman -Qdtq)
-end
+    while pacman -Qdtq
+        sudo pacman -R (pacman -Qdtq)
+    end
 end
 
 ## Useful aliases
@@ -172,7 +172,7 @@ alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 if status --is-interactive && type -q fastfetch
 #    fastfetch --load-config dracula
 #    fastfetch
-neofetch
+      neofetch 
 end
 
 ### SHORTCUTS ###
@@ -240,8 +240,8 @@ alias k='kubectl'
 alias ki='kubectl cluster-info'
 
 function kset
-set ns $argv[1]
-kubectl config set-context --current --namespace=$ns
+    set ns $argv[1]
+    kubectl config set-context --current --namespace=$ns
 end
 
 alias ks='kubectl -n kube-system'
@@ -282,5 +282,11 @@ alias knewtoken='kubeadm token create --print-join-command'
 
 export EDITOR=nvim
 export VISUAL=nvim
-export KUBECONFIG=/home/shyuuhei/.kube/config
+export KUBECONFIG=/home/shyuuhei/.kube/foxhound.yaml
+#export HISTFILE=/home/shyuuhei/.local/share/fish/fish_history_realtime
+export HISTFILE=/home/shyuuhei/.local/share/fish/fish_history
+export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S "
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+
 ## GLOBAL ENV ##
