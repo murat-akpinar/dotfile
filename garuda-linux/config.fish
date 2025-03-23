@@ -283,7 +283,6 @@ alias knewtoken='kubeadm token create --print-join-command'
 export EDITOR=nvim
 export VISUAL=nvim
 export KUBECONFIG=/home/shyuuhei/.kube/foxhound.yaml
-#export HISTFILE=/home/shyuuhei/.local/share/fish/fish_history_realtime
 export HISTFILE=/home/shyuuhei/.local/share/fish/fish_history
 export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S "
 export HISTSIZE=1000
