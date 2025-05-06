@@ -40,6 +40,7 @@ alias dps='docker ps'
 alias dcon='docker container'
 alias dcom='docker compose'
 alias dls='docker images'
+alias drmi='docker rmi'
 
 alias ddel='docker container rm $(docker container ls -aq)'
 alias dstop='docker stop $(docker ps -q)'
