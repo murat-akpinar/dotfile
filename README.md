@@ -31,13 +31,12 @@ echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[
 
 ## vscode eklentileir
 ```bash
-EliverLara.sweet-vscode-icons // PKief.material-icon-theme # icon
-PROxZIMA.sweetdracula # Theme
-includable.file-duplicate 
+thang-nm.flow-icons # Icon theme
+PKief.material-icon-theme // Icon theme 2
+includable.file-duplicate
 firejump.frame-indent-rainbow // oderwat.indent-rainbow
 mhutchie.git-graph
-redhat.ansible
 bierner.markdown-preview-github-styles
 redhat.vscode-yaml
-xcad2k.vscode-thedigitallife
+xcad2k.vscode-thedigitallife # Theme purple
 ```
