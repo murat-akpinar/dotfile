@@ -32,11 +32,10 @@ echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[
 ## vscode eklentileir
 ```bash
 thang-nm.flow-icons # Icon theme
-PKief.material-icon-theme // Icon theme 2
+FileTree Pro # Tree
 includable.file-duplicate
 firejump.frame-indent-rainbow // oderwat.indent-rainbow
 mhutchie.git-graph
 bierner.markdown-preview-github-styles
 redhat.vscode-yaml
-xcad2k.vscode-thedigitallife # Theme purple
 ```
