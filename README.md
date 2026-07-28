@@ -4,7 +4,6 @@ Kurulurken font seçme yerine geldiğinizde **Symbols Nerd Font Mon** seçmelisi
 Kullandığım fontlar;
 - UbuntuMono Nerd Font 
 - Ubuntu Nerd Font Propo Bold 12 size.
-![oh-my-posh](https://r.resimlink.com/jr3M1q5mleaZ.png)
 
 ### Vim Ayarları
 - Vim girinti eklentisi
@@ -22,20 +21,21 @@ echo ':set number' >> ~/.vim/vimrc
 ````bash
 echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[\e[38;5;203m\][\$(hostname -I | awk '\''{print \$1}'\'')]\[\e[m\]\[\e[38;5;215m\] \w\[\e[38;5;141m\] > \[\e[m\]"' >> ~/.bashrc
 ````
-![bash](https://r.resimlink.com/sK2BH3kI1T.png)
+
 
 
 ## Garuda Linux Fish
 
-![garuda-linux-fish](https://r.resimlink.com/7AemkCHE62Q0.png)
+
 
 ## vscode eklentileir
 ```bash
-thang-nm.flow-icons # Icon theme
-FileTree Pro # Tree
+birdlinux.catppuccin-dark-theme
+thang-nm.flow-icons
 includable.file-duplicate
-firejump.frame-indent-rainbow // oderwat.indent-rainbow
+firejump.frame-indent-rainbow
 mhutchie.git-graph
 bierner.markdown-preview-github-styles
-redhat.vscode-yaml
+wayou.vscode-todo-highlight
+fabiospampinato.vscode-todo-plus
 ```
