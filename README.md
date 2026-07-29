@@ -23,11 +23,6 @@ echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[
 ````
 
 
-
-## Garuda Linux Fish
-
-
-
 ## vscode eklentileir
 ```bash
 - Theme
