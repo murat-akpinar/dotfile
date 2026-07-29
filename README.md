@@ -47,3 +47,19 @@ fabiospampinato.vscode-todo-plus
 wayou.vscode-todo-highlight
 
 ```
+
+## vscode settings
+.vscode
+ - settings.json
+```bash
+{
+  // todo.md is a Todo+ file; the extension does not claim *.md by itself.
+  "files.associations": {
+    "todo.md": "todo"
+  },
+  // Dates the extension writes match the ones the repo already uses.
+  "todo.timekeeping.started.format": "YYYY-MM-DD HH:mm",
+  "todo.timekeeping.finished.format": "YYYY-MM-DD"
+}
+
+```
