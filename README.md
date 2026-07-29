@@ -49,8 +49,10 @@ wayou.vscode-todo-highlight
 ```
 
 ## vscode settings
+```bash
 .vscode
  - settings.json
+```
 ```bash
 {
   // todo.md is a Todo+ file; the extension does not claim *.md by itself.
