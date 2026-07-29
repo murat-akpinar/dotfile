@@ -30,18 +30,19 @@ echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[
 
 ## vscode eklentileir
 ```bash
-# Theme
+- Theme
 birdlinux.catppuccin-dark-theme
-# ICON
+
+- ICON
 thang-nm.flow-icons
 
-#TOOLS
+- TOOLS
 includable.file-duplicate
 firejump.frame-indent-rainbow
 mhutchie.git-graph
 bierner.markdown-preview-github-styles
 
-# TODO
+- TODO
 fabiospampinato.vscode-todo-plus
 wayou.vscode-todo-highlight
 
