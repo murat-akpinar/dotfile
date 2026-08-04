@@ -35,7 +35,8 @@ thang-nm.flow-icons
 includable.file-duplicate
 firejump.frame-indent-rainbow
 mhutchie.git-graph
-bierner.markdown-preview-github-styles
+bierner.markdown-preview-github-style
+maciejdems.add-to-gitignore
 
 - TODO
 fabiospampinato.vscode-todo-plus
