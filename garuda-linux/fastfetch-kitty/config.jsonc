@@ -1,24 +1,16 @@
-
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-        "source": "~/.config/fastfetch/cat.txt",
-        "color": {"1": "green"},
-        "type": "auto",
-        "height": 15,
-        "width": 26,
-        "padding": {
-            "top": 3,
-            "left": 2,
-            "right": 6
-        }
-    },
+    "source": "/home/shyuuhei/.config/fastfetch/cat.txt",
+    "type": "file",
+    "padding": {
+      "top": 3
+    }
+  },
   "modules": [
-    "break",
     {
       "type": "custom",
-      "keyColor": "green",
-      "format": "┌──────────────────────────────────────┐" // `\u001b` is `\033`, or `\e`
+      "format": "┌──────────────────────────────────────┐" // `` is `\033`, or `\e`
     },
     {
         "type": "os",
@@ -31,7 +23,7 @@
       "type": "host"
     },
     {
-      "key": "    Kernel",
+      "key": "    Kernel",
       "keyColor": "magenta",
       "type": "kernel"
     },
@@ -42,10 +34,10 @@
     },
     {
         "type": "packages",
-        "key": "    Packages",
+        "key": "   󰏖 Packages",
         "keyColor": "magenta"
     },
-    
+
     {
         "type": "uptime",
         "key": "    Uptime",
@@ -53,7 +45,7 @@
     },
     {
         "type": "command",
-        "key": "    OS Age",
+        "key": "    OS Age",
         "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
         "keyColor": "magenta"
     },
@@ -65,7 +57,7 @@
     },
     {
       "type": "custom",
-      "format": "└──────────────────────────────────────┘" // `\u001b` is `\033`, or `\e`
+      "format": "└──────────────────────────────────────┘" // `` is `\033`, or `\e`
     }
   ]
 }
