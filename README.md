@@ -1,4 +1,17 @@
 # Dotfile
+
+## Dizin Yapısı
+| Dizin | İçerik |
+| --- | --- |
+| `common/` | Platformdan bağımsız genel ayarlar (alias, oh-my-posh teması, kurulum scripti) |
+| `starship/` | Starship prompt ayarları — `starship.toml` genel, `garuda.toml` Garuda varyantı, `catppuccin.toml` Catppuccin teması |
+| `fastfetch/` | Fastfetch ayarları (distro bağımsız) |
+| `neofetch/` | Neofetch ayarları (distro bağımsız) |
+| `windows/` | Windows'a özel ayarlar (PowerShell profili, Windows Terminal) |
+| `garuda-linux/` | Garuda Linux / KDE'ye özel ayarlar |
+| `hyprland/` | Hyprland masaüstü ortamına özel ayarlar |
+| `docs/` | Notlar ve tek satırlık scriptler |
+
 ### Oh My Posh terminal.conf dosyası
 Kurulurken font seçme yerine geldiğinizde **Symbols Nerd Font Mon** seçmelisiniz.
 Kullandığım fontlar;
