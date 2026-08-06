@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "flow-deep",
+    "editor.allowVariableFonts": false,
+    "editor.fontFamily": "CaskaydiaMono Nerd Font",
+    "git.enableSmartCommit": true,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "ı": true
+    },
+    "claudeCode.preferredLocation": "panel",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.experimental.modernUI": true
+}
