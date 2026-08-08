@@ -165,7 +165,7 @@
     {
       "type": "bind",
       "mods": "$mainMod",
-      "key": "D",
+      "key": "I",
       "dispatcher": "exec",
       "command": "bash ~/.config/hypr/scripts/qs_manager.sh toggle applauncher"
     },
