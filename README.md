@@ -74,3 +74,16 @@ wayou.vscode-todo-highlight
 }
 
 ```
+## Todo+ Kullanım Notları
+```bash
+
+| Kısayol            | İşlem                                |
+| ------------------ | ------------------------------------ |
+| `:`                | Todo başlık oluşturur                |
+| `Ctrl + Enter`     | Todo checkbox oluştur                |
+| `Alt + Enter`      | Todo checkbox oluştur                |
+| `Alt + D`          | Todo'yu tamamlandı olarak işaretle   |
+| `Alt + C`          | Todo'yu iptal edildi olarak işaretle |
+| `Alt + S`          | Todo'yu başlat                       |
+| `Ctrl + Shift + A` | Tamamlanan Todo'ları Archive'a taşı  |
+```
