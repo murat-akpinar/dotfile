@@ -85,5 +85,4 @@ wayou.vscode-todo-highlight
 | `Alt + D`          | Todo'yu tamamlandı olarak işaretle   |
 | `Alt + C`          | Todo'yu iptal edildi olarak işaretle |
 | `Alt + S`          | Todo'yu başlat                       |
-| `Ctrl + Shift + A` | Tamamlanan Todo'ları Archive'a taşı  |
 ```
