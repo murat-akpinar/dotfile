@@ -11,120 +11,98 @@
     {
       "type": "bind",
       "mods": "$mainMod SHIFT_L",
-      "key": "F",
+      "key": "SPACE",
       "dispatcher": "exec",
       "command": "hyprctl dispatch togglefloating"
     },
     {
+      "type": "bind",
+      "mods": "$mainMod SHIFT_L",
+      "key": "F",
+      "dispatcher": "fullscreen"
+    },
+    {
       "type": "binde",
       "mods": "$mainMod SHIFT_L",
-      "key": "left",
+      "key": "H",
       "dispatcher": "resizeactive",
       "command": "-50 0"
     },
     {
       "type": "binde",
       "mods": "$mainMod SHIFT_L",
-      "key": "right",
+      "key": "L",
       "dispatcher": "resizeactive",
       "command": "50 0"
     },
     {
       "type": "binde",
       "mods": "$mainMod SHIFT_L",
-      "key": "up",
+      "key": "K",
       "dispatcher": "resizeactive",
       "command": "0 -50"
     },
     {
       "type": "binde",
       "mods": "$mainMod SHIFT_L",
-      "key": "down",
+      "key": "J",
       "dispatcher": "resizeactive",
       "command": "0 50"
-    },
-    {
-      "type": "binde",
-      "mods": "$mainMod ALT",
-      "key": "left",
-      "dispatcher": "resizeactive",
-      "command": "50 0"
-    },
-    {
-      "type": "binde",
-      "mods": "$mainMod ALT",
-      "key": "right",
-      "dispatcher": "resizeactive",
-      "command": "-50 0"
-    },
-    {
-      "type": "binde",
-      "mods": "$mainMod ALT",
-      "key": "up",
-      "dispatcher": "resizeactive",
-      "command": "0 50"
-    },
-    {
-      "type": "binde",
-      "mods": "$mainMod ALT",
-      "key": "down",
-      "dispatcher": "resizeactive",
-      "command": "0 -50"
     },
     {
       "type": "bind",
       "mods": "$mainMod CTRL",
-      "key": "left",
-      "dispatcher": "movewindow",
+      "key": "H",
+      "dispatcher": "movefocus",
       "command": "l"
     },
     {
       "type": "bind",
       "mods": "$mainMod CTRL",
-      "key": "right",
-      "dispatcher": "movewindow",
+      "key": "L",
+      "dispatcher": "movefocus",
       "command": "r"
     },
     {
       "type": "bind",
       "mods": "$mainMod CTRL",
-      "key": "up",
-      "dispatcher": "movewindow",
+      "key": "K",
+      "dispatcher": "movefocus",
       "command": "u"
     },
     {
       "type": "bind",
       "mods": "$mainMod CTRL",
-      "key": "down",
-      "dispatcher": "movewindow",
+      "key": "J",
+      "dispatcher": "movefocus",
       "command": "d"
     },
     {
       "type": "bind",
       "mods": "$mainMod",
       "key": "left",
-      "dispatcher": "movefocus",
+      "dispatcher": "swapwindow",
       "command": "l"
     },
     {
       "type": "bind",
       "mods": "$mainMod",
       "key": "right",
-      "dispatcher": "movefocus",
+      "dispatcher": "swapwindow",
       "command": "r"
     },
     {
       "type": "bind",
       "mods": "$mainMod",
       "key": "up",
-      "dispatcher": "fullscreen",
-      "command": ""
+      "dispatcher": "swapwindow",
+      "command": "u"
     },
     {
       "type": "bind",
       "mods": "$mainMod",
       "key": "down",
-      "dispatcher": "movefocus",
+      "dispatcher": "swapwindow",
       "command": "d"
     },
     {
