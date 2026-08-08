@@ -9,19 +9,6 @@
   "monitors": [],
   "keybinds": [
     {
-      "type": "bind",
-      "mods": "$mainMod SHIFT_L",
-      "key": "SPACE",
-      "dispatcher": "exec",
-      "command": "hyprctl dispatch togglefloating"
-    },
-    {
-      "type": "bind",
-      "mods": "$mainMod SHIFT_L",
-      "key": "F",
-      "dispatcher": "fullscreen"
-    },
-    {
       "type": "binde",
       "mods": "$mainMod SHIFT_L",
       "key": "H",
@@ -95,8 +82,7 @@
       "type": "bind",
       "mods": "$mainMod",
       "key": "up",
-      "dispatcher": "swapwindow",
-      "command": "u"
+      "dispatcher": "fullscreen"
     },
     {
       "type": "bind",

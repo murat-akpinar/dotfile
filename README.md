@@ -23,11 +23,10 @@
 ### Pencere Yönetimi
 | Kısayol | İşlem |
 | --- | --- |
-| `SUPER + ← / → / ↑ / ↓` | Pencereleri yer değiştir (swap) |
+| `SUPER + ← / → / ↓` | Pencereleri yer değiştir (swap) |
+| `SUPER + ↑` | Tam ekran |
 | `SUPER + CTRL + H/J/K/L` | Odağı taşı |
 | `SUPER + SHIFT + H/J/K/L` | Pencereyi boyutlandır (50px adım, basılı tutulabilir) |
-| `SUPER + SHIFT + F` | Tam ekran |
-| `SUPER + SHIFT + SPACE` | Floating aç/kapat |
 | `SUPER + Q` | Pencereyi kapat |
 | `SUPER + TAB` | Diğer monitöre geç |
 | `SUPER + sol tık sürükle` | Pencereyi taşı |
