@@ -10,13 +10,6 @@
   "keybinds": [
     {
       "type": "bind",
-      "mods": "ALT",
-      "key": "F4",
-      "dispatcher": "exec",
-      "command": "hyprctl dispatch killactive"
-    },
-    {
-      "type": "bind",
       "mods": "$mainMod SHIFT_L",
       "key": "F",
       "dispatcher": "exec",
@@ -49,6 +42,34 @@
       "key": "down",
       "dispatcher": "resizeactive",
       "command": "0 50"
+    },
+    {
+      "type": "binde",
+      "mods": "$mainMod ALT",
+      "key": "left",
+      "dispatcher": "resizeactive",
+      "command": "50 0"
+    },
+    {
+      "type": "binde",
+      "mods": "$mainMod ALT",
+      "key": "right",
+      "dispatcher": "resizeactive",
+      "command": "-50 0"
+    },
+    {
+      "type": "binde",
+      "mods": "$mainMod ALT",
+      "key": "up",
+      "dispatcher": "resizeactive",
+      "command": "0 50"
+    },
+    {
+      "type": "binde",
+      "mods": "$mainMod ALT",
+      "key": "down",
+      "dispatcher": "resizeactive",
+      "command": "0 -50"
     },
     {
       "type": "bind",
@@ -109,13 +130,6 @@
     {
       "type": "bind",
       "mods": "$mainMod",
-      "key": "RETURN",
-      "dispatcher": "exec",
-      "command": "kitty"
-    },
-    {
-      "type": "bind",
-      "mods": "$mainMod",
       "key": "F",
       "dispatcher": "exec",
       "command": "zen-browser"
@@ -152,13 +166,6 @@
       "type": "bind",
       "mods": "$mainMod",
       "key": "D",
-      "dispatcher": "exec",
-      "command": "bash ~/.config/hypr/scripts/qs_manager.sh toggle applauncher"
-    },
-    {
-      "type": "bind",
-      "mods": "$mainMod",
-      "key": "I",
       "dispatcher": "exec",
       "command": "bash ~/.config/hypr/scripts/qs_manager.sh toggle applauncher"
     },
@@ -496,7 +503,7 @@
       "mods": "$mainMod",
       "key": "M",
       "dispatcher": "exec",
-      "command": "bash ~/.config/hypr/scripts/qs_manager.sh toggle"
+      "command": "bash ~/.config/hypr/scripts/qs_manager.sh toggle music"
     }
   ],
   "startup": [
