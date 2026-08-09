@@ -468,6 +468,34 @@
       "key": "M",
       "dispatcher": "exec",
       "command": "bash ~/.config/hypr/scripts/qs_manager.sh toggle music"
+    },
+    {
+      "type": "bind",
+      "mods": "$mainMod ALT",
+      "key": "left",
+      "dispatcher": "movefocus",
+      "command": "l"
+    },
+    {
+      "type": "bind",
+      "mods": "$mainMod ALT",
+      "key": "right",
+      "dispatcher": "movefocus",
+      "command": "r"
+    },
+    {
+      "type": "bind",
+      "mods": "$mainMod ALT",
+      "key": "up",
+      "dispatcher": "movefocus",
+      "command": "u"
+    },
+    {
+      "type": "bind",
+      "mods": "$mainMod ALT",
+      "key": "down",
+      "dispatcher": "movefocus",
+      "command": "d"
     }
   ],
   "startup": [
