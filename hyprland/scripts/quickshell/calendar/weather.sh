@@ -48,13 +48,13 @@ mkdir -p "${cache_dir}"
 get_icon() {
     case $1 in
         "50d"|"50n") icon="󰖑"; quote="Mist" ;;
-        "01d") icon=""; quote="Sunny" ;;
-        "01n") icon=""; quote="Clear" ;;
-        "02d"|"02n"|"03d"|"03n"|"04d"|"04n") icon=""; quote="Cloudy" ;;
+        "01d") icon=""; quote="Sunny" ;;
+        "01n") icon=""; quote="Clear" ;;
+        "02d"|"02n"|"03d"|"03n"|"04d"|"04n") icon=""; quote="Cloudy" ;;
         "09d"|"09n"|"10d"|"10n") icon="󰖗"; quote="Rainy" ;;
-        "11d"|"11n") icon=""; quote="Storm" ;;
-        "13d"|"13n") icon=""; quote="Snow" ;;
-        *) icon=""; quote="Unknown" ;;
+        "11d"|"11n") icon=""; quote="Storm" ;;
+        "13d"|"13n") icon=""; quote="Snow" ;;
+        *) icon=""; quote="Unknown" ;;
     esac
     echo "$icon|$quote"
 }
@@ -91,7 +91,7 @@ write_dummy_data() {
         f_day=$(date -d "$future_date" "+%a")
         f_full_day=$(date -d "$future_date" "+%A")
         f_date_num=$(date -d "$future_date" "+%d %b")
-
+        
         final_json="${final_json} {
             \"id\": \"${i}\",
             \"day\": \"${f_day}\",
@@ -103,14 +103,14 @@ write_dummy_data() {
             \"wind\": \"0\",
             \"humidity\": \"0\",
             \"pop\": \"0\",
-            \"icon\": \"\",
+            \"icon\": \"\",
             \"hex\": \"#cdd6f4\",
             \"desc\": \"Offline\",
-            \"hourly\": [{\"time\": \"00:00\", \"temp\": \"0.0\", \"icon\": \"\", \"hex\": \"#cdd6f4\"}]
+            \"hourly\": [{\"time\": \"00:00\", \"temp\": \"0.0\", \"icon\": \"\", \"hex\": \"#cdd6f4\"}]
         },"
     done
     final_json="${final_json%,}]"
-    echo "{ \"current_temp\": \"0.0\", \"current_icon\": \"\", \"current_hex\": \"#cdd6f4\", \"forecast\": ${final_json} }" > "${json_file}"
+    echo "{ \"current_temp\": \"0.0\", \"current_icon\": \"\", \"current_hex\": \"#cdd6f4\", \"forecast\": ${final_json} }" > "${json_file}"
 }
 
 # Resolve WEATHER_CITY -> coordinates via Open-Meteo's geocoder (also key-free).
