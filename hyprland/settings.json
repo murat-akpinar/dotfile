@@ -496,6 +496,13 @@
       "key": "down",
       "dispatcher": "movefocus",
       "command": "d"
+    },
+    {
+      "type": "bind",
+      "mods": "$mainMod",
+      "key": "D",
+      "dispatcher": "exec",
+      "command": "~/.config/hypr/scripts/show_desktop.sh"
     }
   ],
   "startup": [
