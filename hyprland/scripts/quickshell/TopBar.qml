@@ -21,7 +21,8 @@ Variants {
  	        console.log("manual path:", paths.runDir + "/workspaces")
  	        console.log("env test:", Quickshell.env("QS_RUN_WORKSPACES"))
  	        console.log("wsPath:", paths.getRunDir("workspaces"))
-	    }	     	
+	        if (barWindow.sysDataNeeded) SysData.subscribe()
+	    }
         
             IpcHandler {
                 target: "topbar"
@@ -178,6 +179,14 @@ Variants {
                                     barWindow.showHelpIcon = parsed.topbarHelpIcon;
                                 }
                                 
+                                if (parsed.topbarSysMonitor !== undefined && barWindow.showSysMonitor !== parsed.topbarSysMonitor) {
+                                    barWindow.showSysMonitor = parsed.topbarSysMonitor;
+                                }
+
+                                if (parsed.topbarNetSpeed !== undefined && barWindow.showNetSpeed !== parsed.topbarNetSpeed) {
+                                    barWindow.showNetSpeed = parsed.topbarNetSpeed;
+                                }
+
                                 if (parsed.workspaceCount !== undefined && barWindow.workspaceCount !== parsed.workspaceCount) {
                                     barWindow.workspaceCount = parsed.workspaceCount;
                                     wsDaemon.running = false;
@@ -217,6 +226,32 @@ Variants {
                     }
                 }
             }
+
+            // --- System monitor (CPU / RAM / network) ---
+            property bool showSysMonitor: true
+            property bool showNetSpeed: true
+            property bool ramAsGb: false
+
+            property int cpuUsage: SysData.cpu
+            property int ramPercent: SysData.ramPercent
+            property real ramGb: SysData.ramGb
+            property real netRx: SysData.netRx
+            property real netTx: SysData.netTx
+
+            // Compact rate formatting so the pill width stays stable in the bar
+            function formatRate(bytes) {
+                if (!bytes || isNaN(bytes) || bytes < 0) bytes = 0;
+                let kb = bytes / 1024;
+                if (kb < 1) return "0K";
+                if (kb < 1000) return Math.round(kb) + "K";
+                let mb = kb / 1024;
+                return (mb < 100 ? mb.toFixed(1) : Math.round(mb)) + "M";
+            }
+
+            // Only keep the sysdata fetcher alive while a pill actually needs it
+            property bool sysDataNeeded: showSysMonitor || showNetSpeed
+            onSysDataNeededChanged: sysDataNeeded ? SysData.subscribe() : SysData.unsubscribe()
+            Component.onDestruction: { if (sysDataNeeded) SysData.unsubscribe() }
 
             property bool isStartupReady: false
             Timer { interval: 10; running: true; onTriggered: barWindow.isStartupReady = true }
@@ -1258,6 +1293,149 @@ Variants {
                             spacing: barWindow.s(8) 
 
                             property int pillHeight: barWindow.s(34)
+
+                            // --- CPU / RAM ---
+                            Rectangle {
+                                id: sysMonPill
+                                visible: barWindow.showSysMonitor
+                                property bool isHovered: sysMonMouse.containsMouse
+                                property bool isBusy: barWindow.cpuUsage >= 85 || barWindow.ramPercent >= 90
+                                color: isHovered ? Qt.rgba(mocha.surface1.r, mocha.surface1.g, mocha.surface1.b, 0.6) : Qt.rgba(mocha.surface0.r, mocha.surface0.g, mocha.surface0.b, 0.4)
+                                radius: barWindow.s(10); height: sysLayout.pillHeight;
+                                clip: true
+
+                                property real targetWidth: sysMonRow.implicitWidth + barWindow.s(24)
+                                width: targetWidth
+                                Behavior on width { NumberAnimation { duration: 500; easing.type: Easing.OutQuint } }
+
+                                scale: isHovered ? 1.05 : 1.0
+                                Behavior on scale { NumberAnimation { duration: 250; easing.type: Easing.OutExpo } }
+                                Behavior on color { ColorAnimation { duration: 200 } }
+
+                                property bool initAnimTrigger: false
+                                Timer { running: rightContent.showLayout && !sysMonPill.initAnimTrigger; interval: 0; onTriggered: sysMonPill.initAnimTrigger = true }
+                                opacity: initAnimTrigger ? 1 : 0
+                                transform: Translate { y: sysMonPill.initAnimTrigger ? 0 : barWindow.s(15); Behavior on y { NumberAnimation { duration: 500; easing.type: Easing.OutBack } } }
+                                Behavior on opacity { NumberAnimation { duration: 400; easing.type: Easing.OutCubic } }
+
+                                Row {
+                                    id: sysMonRow
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    anchors.left: parent.left
+                                    anchors.leftMargin: barWindow.s(12)
+                                    spacing: barWindow.s(5)
+
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: ""; font.family: "Iosevka Nerd Font"; font.pixelSize: barWindow.s(15)
+                                        color: barWindow.cpuUsage >= 85 ? mocha.red : (sysMonPill.isHovered ? mocha.text : mocha.mauve)
+                                        Behavior on color { ColorAnimation { duration: 250 } }
+                                    }
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        width: barWindow.s(34); horizontalAlignment: Text.AlignRight
+                                        text: barWindow.cpuUsage + "%"
+                                        font.family: "JetBrains Mono"; font.pixelSize: barWindow.s(15); font.weight: Font.Black
+                                        color: mocha.text
+                                    }
+                                    Item { width: barWindow.s(3); height: 1 }
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: ""; font.family: "Iosevka Nerd Font"; font.pixelSize: barWindow.s(15)
+                                        color: barWindow.ramPercent >= 90 ? mocha.red : (sysMonPill.isHovered ? mocha.text : mocha.sapphire)
+                                        Behavior on color { ColorAnimation { duration: 250 } }
+                                    }
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        width: barWindow.s(barWindow.ramAsGb ? 42 : 34); horizontalAlignment: Text.AlignRight
+                                        Behavior on width { NumberAnimation { duration: 300; easing.type: Easing.OutQuint } }
+                                        text: barWindow.ramAsGb ? barWindow.ramGb.toFixed(1) + "G" : barWindow.ramPercent + "%"
+                                        font.family: "JetBrains Mono"; font.pixelSize: barWindow.s(15); font.weight: Font.Black
+                                        color: mocha.text
+                                    }
+                                }
+                                // Left click swaps RAM between percent and GB, right click opens the system monitor panel
+                                MouseArea {
+                                    id: sysMonMouse
+                                    anchors.fill: parent; hoverEnabled: true
+                                    acceptedButtons: Qt.LeftButton | Qt.RightButton
+                                    onClicked: mouse => {
+                                        if (mouse.button === Qt.RightButton) {
+                                            Quickshell.execDetached(["bash", "-c", "qs -p ~/.config/hypr/scripts/quickshell/Shell.qml ipc call floating setIndex 1"]);
+                                        } else {
+                                            barWindow.ramAsGb = !barWindow.ramAsGb;
+                                        }
+                                    }
+                                }
+                            }
+
+                            // --- Network down / up ---
+                            Rectangle {
+                                id: netSpeedPill
+                                visible: barWindow.showNetSpeed
+                                property bool isHovered: netSpeedMouse.containsMouse
+                                color: isHovered ? Qt.rgba(mocha.surface1.r, mocha.surface1.g, mocha.surface1.b, 0.6) : Qt.rgba(mocha.surface0.r, mocha.surface0.g, mocha.surface0.b, 0.4)
+                                radius: barWindow.s(10); height: sysLayout.pillHeight;
+                                clip: true
+
+                                property real targetWidth: netSpeedRow.implicitWidth + barWindow.s(24)
+                                width: targetWidth
+                                Behavior on width { NumberAnimation { duration: 500; easing.type: Easing.OutQuint } }
+
+                                scale: isHovered ? 1.05 : 1.0
+                                Behavior on scale { NumberAnimation { duration: 250; easing.type: Easing.OutExpo } }
+                                Behavior on color { ColorAnimation { duration: 200 } }
+
+                                property bool initAnimTrigger: false
+                                Timer { running: rightContent.showLayout && !netSpeedPill.initAnimTrigger; interval: 50; onTriggered: netSpeedPill.initAnimTrigger = true }
+                                opacity: initAnimTrigger ? 1 : 0
+                                transform: Translate { y: netSpeedPill.initAnimTrigger ? 0 : barWindow.s(15); Behavior on y { NumberAnimation { duration: 500; easing.type: Easing.OutBack } } }
+                                Behavior on opacity { NumberAnimation { duration: 400; easing.type: Easing.OutCubic } }
+
+                                Row {
+                                    id: netSpeedRow
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    anchors.left: parent.left
+                                    anchors.leftMargin: barWindow.s(12)
+                                    spacing: barWindow.s(4)
+
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: ""; font.family: "Iosevka Nerd Font"; font.pixelSize: barWindow.s(14)
+                                        color: netSpeedPill.isHovered ? mocha.text : mocha.green
+                                        Behavior on color { ColorAnimation { duration: 250 } }
+                                    }
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        width: barWindow.s(46); horizontalAlignment: Text.AlignRight
+                                        text: barWindow.formatRate(barWindow.netRx)
+                                        font.family: "JetBrains Mono"; font.pixelSize: barWindow.s(15); font.weight: Font.Black
+                                        color: barWindow.netRx > 0 ? mocha.text : mocha.overlay1
+                                        Behavior on color { ColorAnimation { duration: 250 } }
+                                    }
+                                    Item { width: barWindow.s(3); height: 1 }
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: ""; font.family: "Iosevka Nerd Font"; font.pixelSize: barWindow.s(14)
+                                        color: netSpeedPill.isHovered ? mocha.text : mocha.peach
+                                        Behavior on color { ColorAnimation { duration: 250 } }
+                                    }
+                                    Text {
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        width: barWindow.s(46); horizontalAlignment: Text.AlignRight
+                                        text: barWindow.formatRate(barWindow.netTx)
+                                        font.family: "JetBrains Mono"; font.pixelSize: barWindow.s(15); font.weight: Font.Black
+                                        color: barWindow.netTx > 0 ? mocha.text : mocha.overlay1
+                                        Behavior on color { ColorAnimation { duration: 250 } }
+                                    }
+                                }
+                                // Informational only: hover feedback, no click action
+                                MouseArea {
+                                    id: netSpeedMouse
+                                    anchors.fill: parent; hoverEnabled: true
+                                    acceptedButtons: Qt.NoButton
+                                }
+                            }
 
                             Rectangle {
                                 property bool isHovered: kbMouse.containsMouse
