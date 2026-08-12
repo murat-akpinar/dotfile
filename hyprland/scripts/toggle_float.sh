@@ -3,4 +3,4 @@
 # Geri bastığında tekrar tiling'e döner.
 hyprctl dispatch togglefloating
 hyprctl activewindow -j | jq -e '.floating' >/dev/null &&
-  hyprctl --batch "dispatch resizeactive exact 50% 50% ; dispatch centerwindow"
+  hyprctl --batch "dispatch resizeactive exact 60% 60% ; dispatch centerwindow"
