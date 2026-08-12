@@ -34,7 +34,7 @@
       "mods": "ALT",
       "key": "SPACE",
       "dispatcher": "exec",
-      "command": "hyprctl dispatch togglefloating"
+      "command": "~/.config/hypr/scripts/toggle_float.sh"
     },
     {
       "type": "binde",
