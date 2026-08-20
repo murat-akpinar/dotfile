@@ -10,6 +10,7 @@
 | `windows/` | Windows'a özel ayarlar (PowerShell profili, Windows Terminal) |
 | `garuda-linux/` | Garuda Linux / KDE'ye özel ayarlar |
 | `hyprland/` | Hyprland masaüstü ortamına özel ayarlar |
+| `tmux/` | tmux yapılandırması ve tek akorlu kısayollar (fish bind taşımaları dahil) |
 | `docs/` | Notlar ve tek satırlık scriptler |
 
 ## Hyprland Kısayolları
