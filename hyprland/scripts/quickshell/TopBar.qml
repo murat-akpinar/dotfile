@@ -339,7 +339,7 @@ Variants {
                         let txt = this.text.trim();
                         if (txt !== "") {
                             try { 
-                                let newData = JSON.parse(txt);
+                                let newData = JSON.parse(txt)[barWindow.modelData.name] || [];
                                 
                                 while (workspacesModel.count < newData.length) {
                                     workspacesModel.append({ "wsId": "", "wsState": "" });
@@ -934,7 +934,7 @@ Variants {
                                     id: wsPillMouse
                                     hoverEnabled: true
                                     anchors.fill: parent
-                                    onClicked: Quickshell.execDetached(["bash", "-c", "~/.config/hypr/scripts/qs_manager.sh " + wsName])
+                                    onClicked: Quickshell.execDetached(["bash", "-c", "hyprctl dispatch focusmonitor " + barWindow.modelData.name + " && ~/.config/hypr/scripts/qs_manager.sh " + wsName])
                                 }
                             }
                         }
