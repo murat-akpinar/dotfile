@@ -111,7 +111,14 @@ echo ':set number' >> ~/.vim/vimrc
 ````bash
 echo 'export PS1="\[\e[38;5;48m\]\u\[\e[m\]\[\e[38;5;141m\]@\[\e[38;5;206m\]\h\[\e[38;5;203m\][\$(hostname -I | awk '\''{print \$1}'\'')]\[\e[m\]\[\e[38;5;215m\] \w\[\e[38;5;141m\] > \[\e[m\]"' >> ~/.bashrc
 ````
+## Zen Browser Copy Paste Ayarı
 
+```bash
+1. Elle (about:config):
+1. Normal Zen'de adres çubuğuna about:config yazın, uyarıyı kabul edin.
+2. dom.events.testing.asyncClipboard arayın ve değerini true yapın. Değeri değiştirmek için çift tıklamanız yeterli.
+3. Zen'i kapatıp açın.
+```
 
 ## vscode eklentileir
 ```bash
